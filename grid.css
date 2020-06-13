@@ -1,0 +1,41 @@
+body {
+    background-color: plum;
+}
+
+.container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 27% 27% 27%;
+    grid-template-rows: 8% 30% auto 10%;
+    grid-template-areas: "header header header header"
+                         "nav nav nav"
+                         "ads section article"
+                         "footer footer footer";
+    
+}
+
+.header {
+    grid-area: header;
+    background-color:white; 
+}
+
+.nav {
+    grid-area: nav;
+    background-color:red; 
+}
+
+.section {
+    grid-area: section;
+    background-color: yellow;
+}
+
+.article {
+    grid-area: article;
+    background-color: blue;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: orange;
+}
+
