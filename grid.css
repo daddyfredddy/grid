@@ -1,6 +1,3 @@
-body {
-    background-color: plum;
-}
 
 .container {
     margin: 0;
@@ -20,13 +17,34 @@ body {
 }
 
 .nav {
+    display: grid;
     grid-area: nav;
-    background-color:red; 
+    background-color: gray; 
+}
+
+#links {
+    display: grid;
+    justify-content: end;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    align-content: flex-start;
+}
+
+#logo {
+    display: grid;
+    justify-content: flex-start;
+    max-width: 40px;
+    
+    
+}
+
+a:hover {
+    color: red;
 }
 
 .section {
     grid-area: section;
-    background-color: yellow;
+    background-color: purple;
 }
 
 .article {
